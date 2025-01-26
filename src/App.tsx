@@ -270,7 +270,7 @@ function App() {
       const compressionSettings = {
         low: { quality: 0.8, imageScale: 0.9 },
         medium: { quality: 0.6, imageScale: 0.7 },
-        high: { quality: 0.3, imageScale: 0.4 }
+        high: { quality: 0.2, imageScale: 0.3 }
       }[compressionLevel];
 
       // Get all pages
@@ -281,8 +281,8 @@ function App() {
         // Get all images on the page
         const { width, height } = page.getSize();
         
-        // Scale down page size slightly for additional compression
-        page.setSize(width, height);
+         // Scale down page size slightly for additional compression
+         page.setSize(width, height);
       }
 
       // Save with maximum compression
